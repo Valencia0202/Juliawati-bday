@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- ================= HERO VIDEO ================= -->
+
+<section class="hero">
+
+    <video autoplay muted loop playsinline id="heroVideo">
+        <source src="assets/video/birthday.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay">
+
+
+        <a href="#cake" class="scrollBtn">
+            Scroll Down ↓
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= MUSIC ================= -->
+
+<audio id="birthdayMusic" loop>
+    <source src="assets/audio/birthday.mp3" type="audio/mp3">
+</audio>
+
+<audio id="blowSound">
+    <source src="assets/audio/blow.mp3" type="audio/mp3">
+</audio>
+
+<!-- ================= CAKE ================= -->
+
+<section id="cake" class="cakeSection">
+
+    <h2>🎂 Make A Birthday Wish</h2>
+
+    <p>Click every candle to blow them out!</p>
+
+    <div class="cake">
+
+        <div class="cakeTop">
+
+            <div class="candle" data-id="1">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle" data-id="2">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle" data-id="3">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle" data-id="4">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle" data-id="5">
+                <div class="flame"></div>
+            </div>
+
+        </div>
+
+        <div class="cakeBody"></div>
+
+    </div>
+
+</section>
+
+<!-- ================= MESSAGE ================= -->
+
+<section id="messageSection" class="hidden">
+
+    <h2>💌 A Message For You</h2>
+
+    <p id="typewriter"></p>
+
+</section>
+
+<!-- ================= PHOTO GALLERY ================= -->
+
+<section class="gallery">
+
+    <div class="photo">
+
+        <img src="assets/images/photo1.jpg" alt="Photo 1">
+
+    </div>
+
+    <div class="photo">
+
+        <img src="assets/images/photo2.jpg" alt="Photo 2">
+
+    </div>
+
+</section>
+
+<!-- ================= SURPRISE ================= -->
+
+<section class="surprise">
+
+    <button id="giftBtn">
+
+        🎁 Open My Gift
+
+    </button>
+
+</section>
+
+<!-- ================= FINAL ================= -->
+
+<section id="finalSection" class="hidden">
+
+    <img src="assets/images/final.jpg" alt="Final Photo">
+
+    <h2>Selamat Ulang Tahun ❤️</h2>
+
+    <p>
+        Semoga panjang umur, sehat selalu, dan bahagia selalu. Semoga semua doa dan harapanmu terkabul. Tetap semangat dan terus berkarya. Semoga hari-harimu dipenuhi dengan kebahagiaan dan cinta. Selamat ulang tahun yang ke-49! 🎉
+    </p>
+
+</section>
+
+<!-- Floating Hearts -->
+
+<div id="hearts"></div>
+
+<!-- Floating Balloons -->
+
+<div id="balloons"></div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
